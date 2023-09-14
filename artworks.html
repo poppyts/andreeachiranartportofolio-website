@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Andreea Chiran's Art Portfolio</title>
+    <style>
+        h1 {
+            text-align: center;
+            margin-top: 25vh;
+            transform: translateY(-50%);
+            text-transform: uppercase;
+            cursor: pointer;
+            font-size: 3em;
+            position: relative;
+            background: linear-gradient(45deg, #578bbd, #ba66c5, #957eca, #7375ee); /* Gradient for golden shine */
+            background-size: 200% 200%;
+            color: #fff; /* Text color set to white for contrast */
+            font-family: "Helvetica Neue", HelveticaNeue, Arial, sans-serif;
+            border: 2px solid #ccc;
+            padding: 10px 20px;
+            animation: shine 2s linear infinite; /* Animation for shine effect */
+        }
+
+        @keyframes shine {
+            0% {
+                background-position: 0 0;
+            }
+            100% {
+                background-position: 200% 200%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1 onclick="scrollToArtworks()">Welcome to Andreea Chiran's Portfolio</h1>
+    <style>        .artwork-container img {
+        max-width: 100%;
+        height: auto;
+        cursor: pointer;
+        border: 1px solid #ccc; /* Add a border for clarity */
+        margin-bottom: 10px; /* Add some space below the image */
+    }
+
+    .download-button {
+        background-color: #4cacaf; 
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        border-radius: 10px;
+    }
+    .download-button:hover {
+        background-color: white; 
+        color: black; 
+        border: 2px solid #442b64;
+    }
+</style>
+    <div id="artworks">
+        <h2 id="artworks-heading">Artworks</h2>
+        <style>
+            @keyframes moveArtworks {
+                0% { transform: translateX(0); }
+                50% { transform: translateX(10px); }
+                100% { transform: translateX(0); }
+            }
+        
+            #artworks-heading {
+                animation: moveArtworks 1s infinite;
+            }
+        </style>
+        <p>Here are some of Andreea Chiran's amazing artworks:</p>     
+            <div class="artwork-container">
+                <a href="ich.jpg" target="_blank">   
+                    <img src="ich.jpg" alt="Artwork 1">
+                </a>
+                <br>
+                <button class="download-button" onclick="downloadArtwork('ich.jpg')">Download Artwork</button>
+            </div>
+            <div class="artwork-container">
+        <a href="madalina.jpg" target="_blank">   
+            <img src="madalina.jpg" alt="Artwork 2">
+            <a href="rux.jpg" target="_blank">
+        <img src="rux.jpg" alt="Artwork 3">
+        <a href="theo.jpg" target="_blank">
+        <img src="theo.jpg" alt="Artwork 4">
+        <a href="gogan.jpg" target="_blank">
+        <img src="gogan.jpg" alt="Artwork 5">
+        <a href="delia.jpg" target="_blank">
+        <img src="delia.jpg" alt="Artwork 6">
+        <a href="roxen.jpg" target="_blank">
+        <img src="roxen.jpg" alt="Artwork 7"> 
+        <style>
+            .artwork-container {
+                text-align: center;
+            }
+    
+            .artwork-container img {
+                max-width: 100%;
+                height: auto;
+                cursor: pointer;
+                border: 2px solid #ccc;
+                margin-bottom: 10px;
+                transition: transform 0.3s;
+            }
+    
+            .artwork-container img:hover {
+                transform: scale(1.1);
+            }
+        </style>
+        <style>
+            .button-wrapper {
+              text-align: center;
+            }
+            
+            .button-wrapper a {
+              display: inline-block;
+              padding: 10px 20px;
+              border-radius: 25px;
+              background-color: #ff69b4; /* Change to your desired button color */
+              color: #ffffff; /* Change to your desired text color */
+              text-decoration: none;
+              font-size: 16px;
+              font-weight: bold;
+            }
+            
+            .button-wrapper a:hover {
+              background-color: #ff3385; /* Change to your desired hover color */
+            }
+            </style>
+            
+            <div class="button-wrapper">
+                <a href="anoreea.html" id="Home">Return to home page</a>
+                <p style="text-align: center; margin-top: 10px; font-size: 14px;">
+                    You can return to the home page and contact/follow Andreea on her Instagram and TikTok.
+                  </p>
+              </div>
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Cute Comments Section</title>
+            
+                <style>
+                    .comments-section {
+                        max-width: 600px;
+                        margin: 20px auto 40px; /* Added margin at the top */
+                        padding: 10px;
+                        border: 1px solid #ccc;
+                        border-radius: 10px;
+                        background-color: #f9f9f9;
+                    }
+            
+                    .comment-form input,
+                    .comment-form textarea {
+                        width: 100%;
+                        padding: 20px;
+                        margin-bottom: 10px;
+                        border: 1px solid #ccc;
+                        border-radius: 5px;
+                    }
+            
+                    .comment-form button {
+                        padding: 10px 20px;
+                        border: none;
+                        border-radius: 5px;
+                        background-color: #ff69b4;
+                        color: #ffffff;
+                        font-size: 16px;
+                        font-weight: bold;
+                        cursor: pointer;
+                    }
+            
+                    .comment-form button:hover {
+                        background-color: #ff3385;
+                    }
+            
+                    .comments {
+                        list-style-type: none;
+                        padding: 0;
+                    }
+            
+                    .comment {
+                        padding: 10px;
+                        border: 1px solid #ccc;
+                        border-radius: 5px;
+                        background-color: #ffffff;
+                        margin-bottom: 10px;
+                    }
+                </style>
+            </head>
+            
+            <body>
+                <div class="comments-section">
+                    <h2>Leave a Comment</h2>
+                    <form class="comment-form">
+                        <input type="text" name="name" placeholder="Your Name" required><br>
+                        <textarea name="comment" placeholder="Your Comment" required></textarea><br>
+                        <button type="submit">Submit</button>
+                    </form>
+            
+                    <h2>Comments</h2>
+                    <ul class="comments">
+                        <!-- Comments will be dynamically added here -->
+                    </ul>
+                </div>   
+                <script>
+                    // JavaScript for handling form submission and displaying comments
+                    document.querySelector('.comment-form').addEventListener('submit', function (e) {
+                        e.preventDefault();
+                        var name = this.querySelector('[name="name"]').value;
+                        var comment = this.querySelector('[name="comment"]').value;
+            
+                        var commentElement = document.createElement('li');
+                        commentElement.className = 'comment';
+                        commentElement.innerHTML = '<strong>' + name + ':</strong> ' + comment;
+            
+                        document.querySelector('.comments').appendChild(commentElement);
+            
+                        this.reset(); // Reset form fields
+                    });
+                </script>
+            </body>
+</html>
